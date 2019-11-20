@@ -272,7 +272,7 @@ docker run --rm --privileged multiarch/qemu-user-static:register --reset
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
 
 ## Versions
-
+* **20.11.19:** - cryptography packged updated to 2.9. by cybergate linux
 * **17.11.19:** - Add php7-pdo_odbc.
 * **17.11.19:** - Add transip dns validation plugin.
 * **27.10.19:** - Turn off lua resty core to get rid of error message in the log (existing users will have to delete `/config/nginx/nginx.conf` and restart the container).
