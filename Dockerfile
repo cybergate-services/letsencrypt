@@ -10,6 +10,9 @@ LABEL maintainer="aptalca"
 # environment settings
 ENV DHLEVEL=2048 ONLY_SUBDOMAINS=false AWS_CONFIG_FILE=/config/dns-conf/route53.ini
 ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2
+RUN apk --update add build-base libffi-dev openssl-dev python-dev py-pip
+RUN apk --update add py3-cryptography
+RUN apk --update add py3-openssl
 
 RUN \
  echo "**** install runtime packages ****" && \
